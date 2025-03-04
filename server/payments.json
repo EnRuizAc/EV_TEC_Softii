@@ -1,0 +1,41 @@
+[
+  {
+    "payments": [
+      {
+        "id": 1741103229544,
+        "method": "BBVA",
+        "amount": 800
+      },
+      {
+        "id": 1741103235286,
+        "method": "Santander",
+        "amount": 700
+      },
+      {
+        "id": 1741103239798,
+        "method": "Efectivo",
+        "amount": 100
+      }
+    ],
+    "peopleCount": 2,
+    "totalPaid": 1600,
+    "timeStamp": "2025-03-04T15:47:28.184Z"
+  },
+  {
+    "payments": [
+      {
+        "id": 1741103261379,
+        "method": "Efectivo",
+        "amount": 1500
+      },
+      {
+        "id": 1741103269876,
+        "method": "BBVA",
+        "amount": 1500
+      }
+    ],
+    "peopleCount": 3,
+    "totalPaid": 3000,
+    "timeStamp": "2025-03-04T15:47:53.163Z"
+  }
+]

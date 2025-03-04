@@ -1,0 +1,264 @@
+.header {
+  display: flex;         
+  width: 95vw;
+  justify-content: space-between; 
+  align-items: center;   
+  padding: 10px 20px;   
+  background-color: #f8f8f8;
+  border-bottom: 2px solid #ddd; 
+}
+.title {
+  font-size: 24px; 
+  font-weight: bold;
+}
+
+body {
+  display: block;
+  font-family: 'Cooper Black', sans-serif;
+  background-color: #F6F6F6;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+.footer {
+  display: flex;         
+  width: 95vw;
+  justify-content: space-between; 
+  align-items: center;   
+  padding: 10px 20px;     
+  background-color: #f8f8f8;
+  border-bottom: 2px solid #ddd; 
+}
+
+.flex-vertical-container {
+  display: flex;
+  flex-direction: row; 
+  flex-wrap: nowrap; 
+  align-items: stretch;
+  justify-content: space-between; 
+  width: 95vw;
+  height: 75vh; 
+}
+
+.left, .center, .right {
+  flex: 33.33%; 
+  display: flex; 
+  flex-direction: column;
+  padding: 20px;
+  justify-content: flex-start; 
+}
+.horizontal-cointainer {
+  margin-bottom: 25px;
+}
+.total-tips {
+  border-radius: 8px;
+  width: 95%;
+}
+
+.icon-button {
+  background-color: #dd715f;
+  color: #FFF;
+  border: none;
+  border-radius: 8px;
+  padding: 20px 20px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  width: 30%; 
+  margin-bottom: 5px;
+}
+
+.icon-button.selected {
+  background-color: #E63939; 
+}
+
+.button-icon {
+  width: 30%; 
+  height: auto;
+  margin-bottom: 10px; 
+}
+
+
+.confirmed-payments {
+  margin-top: 20px;
+}
+
+.confirmed-payments ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.confirmed-payments li {
+  background-color: #f4f4f4;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.pay-button {
+  background-color: #E63939; 
+  color: white; 
+  padding: 12px 24px;  
+  border: none;  
+  font-size: 16px;  
+  font-weight: bold;  
+  transition: all 0.3s ease; 
+  cursor: pointer; 
+}
+
+.pay-button:disabled {
+  background-color: #ddd; 
+  color: #888;  
+  cursor: not-allowed; 
+  opacity: 0.6;  
+}
+
+.cash {
+    background-color: #ffcc80;  
+    color: #e65100; 
+    padding: 10px 20px;  
+    border-radius: 8px; 
+    font-size: 20px; 
+    font-weight: bold; 
+    text-align: center;  
+}
+.orange-letters {
+  color: #e65100;
+  font-size: 25px;
+}
+
+
+.dividing-tips {
+  border-radius: 8px;
+  width: 95%;
+}
+.payment-section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.input-field {
+  margin-bottom: 15px;
+}
+input[type="text"],
+input[type="number"] {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #E1E1E1;
+  border-radius: 4px;
+}
+.calculator {
+  background: #fcf5f4;
+  border: 1px solid #E1E1E1;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+}
+
+.display {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  border: 1px solid #E1E1E1;
+  border-radius: 4px;
+  padding: 10px;
+  background-color: #F2F2F2;
+  height: 50px; 
+  line-height: 30px;
+}
+
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+  background-color: #fcf5f4
+}
+
+.key {
+  padding: 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  background-color: #ffffff
+}
+
+.key:hover {
+  background-color: #dd715f; 
+}
+
+.key:active {
+  background-color: #D32F2F; 
+}
+
+.confirm-button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #FF4D4D;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.confirm-button:hover {
+  background-color: #E63939;
+}
+
+.display {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+.floating-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #FF4D4D;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+.floating-button:hover {
+  background-color: #E63939;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+  .calculator {
+  padding: 15px;
+  }
+  .display {
+  font-size: 28px;
+  }
+  .key {
+  padding: 15px;
+  font-size: 20px;
+  }
+  .confirm-button {
+  padding: 8px;
+  font-size: 16px;
+  }
+}
